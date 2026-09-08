@@ -5,6 +5,9 @@ Model, per cell c with window attempts n = 1..W_c and success set S_c (|S_c| = s
 
     logit P(success at n) = alpha_c + beta * log(n)
 
+The fitted quantity 2**beta is therefore an ODDS RATIO per doubling of the
+attempt index, not a hazard ratio and not exactly a probability ratio.
+
 Conditioning on s_c eliminates alpha_c EXACTLY (no Breslow approximation):
 
     L_c(beta) = exp(beta * sum_{k in S_c} log k)  /  sum_{|A| = s_c} exp(beta * sum_{k in A} log k)
@@ -102,9 +105,9 @@ def run(name, cellflags):
         print(f"  {label}")
         print(f"     windows {len(data):,}  (successes/window: median {np.median(ns):.0f}, max {ns.max()})")
         print(f"     beta = {bh:+.4f}   95% profile CI [{lo:+.4f}, {hi:+.4f}]   -> {sig}")
-        print(f"     hazard ratio per doubling = {hr:.3f}x   [{2**lo:.3f}, {2**hi:.3f}]")
+        print(f"     odds ratio per doubling = {hr:.3f}x   [{2**lo:.3f}, {2**hi:.3f}]")
         res[mode] = {"windows": int(len(data)), "beta": bh, "ci": [lo, hi],
-                     "hr_per_doubling": hr, "hr_ci": [2 ** lo, 2 ** hi], "verdict": sig,
+                     "or_per_doubling": hr, "or_ci": [2 ** lo, 2 ** hi], "verdict": sig,
                      "max_successes_in_window": int(ns.max())}
     res["cells_total"] = n_all
     res["cells_zero_success"] = n_zero

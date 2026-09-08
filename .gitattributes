@@ -1,0 +1,13 @@
+# NOTE ON ORDER: for a given path the LAST matching pattern wins, so the general
+# rule comes first and the byte-exact overrides come after it.
+
+# Default: let Git normalise ordinary source and text files.
+* text=auto
+
+# Data files are byte-exact. results/judge_raw/MANIFEST.json records a SHA-256 for
+# each raw Section 7 output, and an LF->CRLF conversion on checkout would silently
+# break every one of those checks for anyone cloning on a platform where
+# core.autocrlf is enabled.
+*.json -text
+*.jsonl -text
+results/judge_raw/** -text

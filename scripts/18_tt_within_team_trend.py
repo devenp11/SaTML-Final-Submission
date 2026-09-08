@@ -1,7 +1,8 @@
 """Same frailty-proof within-team test, on Tensor Trust (independent corpus).
 
 Cell = (attacker, defense_id). Under "no learning" a cell's successes are a uniform
-random size-s subset of its N attempts -> mean normalised position ~0.5.
+random size-s subset of its N attempts -> mean position exactly (N+1)/2, so the
+centred statistic below has null expectation 0.
   < 0.5 successes early -> within-cell hazard declines ("failures don't teach")
   > 0.5 successes late  -> within-cell LEARNING
 """
@@ -33,7 +34,8 @@ def stat(v, drop_quitters):
         return None
     if drop_quitters and pos[-1] == N:
         return None
-    return np.mean(pos) / N - 0.5
+    # exactly centred: under the uniform null E[mean(pos)] = (N+1)/2
+    return (np.mean(pos) - (N + 1) / 2) / N
 
 
 def ci(a, n=3000):
@@ -45,7 +47,7 @@ report = {}
 for drop in (False, True):
     label = "EXCLUDING quit-after-success" if drop else "ALL cells (conservative)"
     print(f"\n{'='*80}\nTENSOR TRUST within-cell success position — {label}\n{'='*80}")
-    print(f"  {'llm':22s} {'cells':>7s} {'mean-0.5':>10s} {'95% CI':>20s} {'verdict':>8s}")
+    print(f"  {'llm':22s} {'cells':>7s} {'centred':>10s} {'95% CI':>20s} {'verdict':>8s}")
     pooled, rows = [], []
     for llm, vs in sorted(byllm.items()):
         a = np.array([x for x in (stat(v, drop) for v in vs) if x is not None])

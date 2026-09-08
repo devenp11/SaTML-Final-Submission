@@ -7,9 +7,10 @@ learning MASKED by strong frailty, netting out to a population decline.
 
 This test conditions on each team's own (N attempts, s successes), so team skill and
 frailty cancel exactly. Under "no learning", the positions of a team's successes are a
-uniform random size-s subset of 1..N, whose mean normalised position is ~0.5.
-  mean position < 0.5  -> successes early  -> within-team hazard DECLINES (claim 1 holds)
-  mean position > 0.5  -> successes late   -> within-team LEARNING (claim 1 fails)
+uniform random size-s subset of 1..N, whose mean position is exactly (N+1)/2. The
+statistic below subtracts that centre and divides by N, so its null expectation is 0.
+  statistic < 0  -> successes early  -> within-team hazard DECLINES (claim 1 holds)
+  statistic > 0  -> successes late   -> within-team LEARNING (claim 1 fails)
 
 KNOWN CONSERVATIVE BIAS: teams that quit after succeeding put that success at position
 N, pulling the statistic toward 1.0 -- i.e. AGAINST claim 1. Reported both ways.
@@ -49,7 +50,8 @@ def team_stats(flags, drop_quitters):
         return None
     if drop_quitters and pos[-1] == N:
         return None
-    return np.mean(pos) / N - 0.5
+    # exactly centred: under the uniform null E[mean(pos)] = (N+1)/2
+    return (np.mean(pos) - (N + 1) / 2) / N
 
 
 def ci(v, n=3000):
@@ -61,7 +63,7 @@ report = {}
 for drop in (False, True):
     label = "EXCLUDING quit-after-success" if drop else "ALL teams (conservative)"
     print(f"\n{'='*86}\nWITHIN-TEAM SUCCESS POSITION — {label}\n{'='*86}")
-    print(f"  {'ph':>2s} {'model':6s} {'defense':22s} {'teams':>6s} {'mean-0.5':>10s} {'95% CI':>20s} {'verdict':>8s}")
+    print(f"  {'ph':>2s} {'model':6s} {'defense':22s} {'teams':>6s} {'centred':>10s} {'95% CI':>20s} {'verdict':>8s}")
     rows, pooled = [], []
     for phase in (1, 2):
         for key in sorted(DATA[phase]):

@@ -30,17 +30,23 @@ MIN_ATT = 4
 
 
 def est(flags, mode):
-    """flags: chronological list of bools. -> normalised deviation from 0.5, or None."""
+    """flags: chronological list of bools. -> exactly centred position statistic, or None.
+
+    Under the null that the success positions are a uniform random subset of the window
+    {1..M}, E[mean(pos)] = (M+1)/2. Subtracting that centre and dividing by the window
+    length M gives a statistic with null expectation exactly 0, positive when successes
+    fall late in the window and negative when they fall early.
+    """
     N = len(flags)
     pos = [i + 1 for i, e in enumerate(flags) if e]
     if not pos or N < MIN_ATT:
         return None
     if mode == "A":
-        return np.mean(pos) / N - 0.5
+        return (np.mean(pos) - (N + 1) / 2) / N
     if mode == "B":
         if pos[-1] == N:
             return None
-        return np.mean(pos) / N - 0.5
+        return (np.mean(pos) - (N + 1) / 2) / N
     if mode == "T":
         if len(pos) < 2:
             return None
@@ -49,7 +55,7 @@ def est(flags, mode):
         inner = [p for p in pos[:-1]]     # successes strictly before L
         if W < MIN_ATT or not inner:
             return None
-        return np.mean(inner) / W - 0.5
+        return (np.mean(inner) - (W + 1) / 2) / W
     raise ValueError(mode)
 
 
@@ -60,7 +66,7 @@ def ci(a, n=3000):
 
 def run(name, cellflags):
     print(f"\n{'='*78}\n{name}\n{'='*78}")
-    print(f"  {'estimator':38s} {'cells':>8s} {'mean-0.5':>10s} {'95% CI':>20s} {'verdict':>8s}")
+    print(f"  {'estimator':38s} {'cells':>8s} {'centred':>10s} {'95% CI':>20s} {'verdict':>8s}")
     res = {}
     for mode, desc in [("A", "A  all cells (conservative, biased late)"),
                        ("B", "B  drop cells ending in success"),

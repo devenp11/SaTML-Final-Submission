@@ -96,7 +96,7 @@ for i, c in enumerate(cols):
 ax[2].axvline(0, color="k", lw=1, ls="--")
 ax[2].set_yticks(y); ax[2].set_yticklabels(labels, fontsize=6.5)
 ax[2].tick_params(axis="y", pad=1)
-ax[2].set_xlabel("mean normalised success position $-$ 0.5")
+ax[2].set_xlabel("centred success position (0 = uniform null)")
 ax[2].set_title("(c) within attacker, successes are LATE\n$\\rightarrow$ hazard RISES", fontsize=9)
 ax[2].invert_yaxis()
 fig.suptitle("Aggregate attacker-learning curves invert the within-attacker truth", fontsize=10.5, y=1.04)
