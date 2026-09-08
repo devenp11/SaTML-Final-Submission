@@ -7,8 +7,11 @@ invites the obvious reviewer objection that the survivors are a selected subset.
 
 Estimator T (TRUNCATED) avoids the exclusion entirely: restrict each cell to attempts
 1..L-1 where L is the position of the LAST success, and ask where the remaining s-1
-successes fall in that window. The stopping rule only governs what happens at or after
-L, so the window is free of it. Needs s>=2.
+successes fall in that window. Excluding L removes the terminal success that the
+stopping rule places at the boundary by construction, which is the mechanical component
+of the bias. It does not by itself make the window independent of the stopping process:
+whether a cell is observed, and how long its window is, may still depend on earlier
+events. Needs s>=2.
 
 Reported side by side:
   A  all cells                      (biased LATE   -> conservative against learning)

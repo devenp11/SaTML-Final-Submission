@@ -59,7 +59,7 @@ TABLE_CAPS = {
     3: "Conditional logistic regression with attacker fixed effects.",
     4: "Family survival rate on LLMail, detector-level evasion flag.",
     5: "Within-attacker split-half restricted by the wall-clock span of the attacker's "
-       "whole sequence, ruling out community diffusion.",
+       "whole sequence, arguing against community diffusion.",
     6: "Causal test of the determinism hypothesis.",
     7: "Pooled family survival under the two admissible family-seed definitions.",
 }
@@ -190,7 +190,7 @@ EQUATIONS = {
         r"h_{\mathrm{pop}}(n) \;=\; E\!\left[\, h_i(n) \;\middle|\; "
         r"i \text{ has not succeeded before } n \,\right].",
     "mean(success positions)":
-        r"T \;=\; \operatorname{mean}(\text{success positions}) \,/\, N \;-\; 0.5",
+        r"T \;=\; \frac{\operatorname{mean}(\text{success positions}) \;-\; (N+1)/2}{N},",
     "logit Pr[success at attempt":
         r"\operatorname{logit} \Pr\!\left[\text{success at attempt } n\right] "
         r"\;=\; \alpha_c + \beta \log n,",
