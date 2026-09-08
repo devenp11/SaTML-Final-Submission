@@ -1,0 +1,154 @@
+{
+ "W6": {
+  "total_defenses": 906,
+  "by_cutoff": {
+   "1": {
+    "defenses": 906,
+    "pct_of_pool": 100.0,
+    "p5": 0.2523148148148148,
+    "median": 1.0,
+    "p95": 1.0
+   },
+   "3": {
+    "defenses": 284,
+    "pct_of_pool": 31.346578366445915,
+    "p5": 0.20260869565217393,
+    "median": 0.9663299663299663,
+    "p95": 1.0
+   },
+   "5": {
+    "defenses": 168,
+    "pct_of_pool": 18.543046357615893,
+    "p5": 0.14100000000000001,
+    "median": 0.8,
+    "p95": 1.0
+   },
+   "10": {
+    "defenses": 91,
+    "pct_of_pool": 10.044150110375275,
+    "p5": 0.10977564102564102,
+    "median": 0.6666666666666666,
+    "p95": 1.0
+   },
+   "20": {
+    "defenses": 41,
+    "pct_of_pool": 4.525386313465783,
+    "p5": 0.10416666666666667,
+    "median": 0.5581395348837209,
+    "p95": 0.9696969696969697
+   },
+   "50": {
+    "defenses": 6,
+    "pct_of_pool": 0.6622516556291391,
+    "p5": 0.14875,
+    "median": 0.40119850187265915,
+    "p95": 0.901702786377709
+   }
+  },
+  "excluded_n": 815,
+  "excluded_mean_fsr": 0.921747492453014,
+  "included_n": 91,
+  "included_mean_fsr": 0.6239711466791541
+ },
+ "W3": {
+  "defense_sd": 0.29219387601371427,
+  "attacker_sd": 0.26870770225946206,
+  "defense_n": 91,
+  "attacker_n": 56
+ },
+ "W5": {
+  "table": {
+   "GPT/AllCombined": {
+    "token Jaccard >=0.7": 0.05697445972495088,
+    "char 5-gram J >=0.7": 0.05651672433679354,
+    "seq ratio >=0.7 (order-sensitive)": 0.1168412570507655,
+    "seq ratio >=0.85 (strict)": 0.059343434343434344
+   },
+   "GPT/LLMJudge": {
+    "token Jaccard >=0.7": 0.3788235294117647,
+    "char 5-gram J >=0.7": 0.4032697547683924,
+    "seq ratio >=0.7 (order-sensitive)": 0.40772532188841204,
+    "seq ratio >=0.85 (strict)": 0.41139240506329117
+   },
+   "GPT/PromptShield-v1": {
+    "token Jaccard >=0.7": 0.5109595713589868,
+    "char 5-gram J >=0.7": 0.4539911308203991,
+    "seq ratio >=0.7 (order-sensitive)": 0.4705573080967403,
+    "seq ratio >=0.85 (strict)": 0.8714689265536724
+   },
+   "GPT/TaskTracker-Phi3": {
+    "token Jaccard >=0.7": 0.47240618101545256,
+    "char 5-gram J >=0.7": 0.4519956850053937,
+    "seq ratio >=0.7 (order-sensitive)": 0.46244417377182295,
+    "seq ratio >=0.85 (strict)": 0.42824339839265213
+   },
+   "Phi-3/AllCombined": {
+    "token Jaccard >=0.7": 0.6013986013986014,
+    "char 5-gram J >=0.7": 0.732620320855615,
+    "seq ratio >=0.7 (order-sensitive)": 0.3499222395023328,
+    "seq ratio >=0.85 (strict)": 0.7295918367346939
+   },
+   "Phi-3/LLMJudge": {
+    "token Jaccard >=0.7": 0.39438700147710487,
+    "char 5-gram J >=0.7": 0.4104882459312839,
+    "seq ratio >=0.7 (order-sensitive)": 0.40771558245083206,
+    "seq ratio >=0.85 (strict)": 0.42483660130718953
+   },
+   "Phi-3/PromptShield-v1": {
+    "token Jaccard >=0.7": 0.891647855530474,
+    "char 5-gram J >=0.7": 0.9187214611872146,
+    "seq ratio >=0.7 (order-sensitive)": 0.8708196721311475,
+    "seq ratio >=0.85 (strict)": 0.909433962264151
+   },
+   "Phi-3/TaskTracker-Phi3": {
+    "token Jaccard >=0.7": 0.8111047510017172,
+    "char 5-gram J >=0.7": 0.8212083847102343,
+    "seq ratio >=0.7 (order-sensitive)": 0.8099128540305011,
+    "seq ratio >=0.85 (strict)": 0.8402555910543131
+   }
+  },
+  "orderings": {
+   "token Jaccard >=0.7": [
+    "GPT/AllCombined",
+    "GPT/LLMJudge",
+    "Phi-3/LLMJudge",
+    "GPT/TaskTracker-Phi3",
+    "GPT/PromptShield-v1",
+    "Phi-3/AllCombined",
+    "Phi-3/TaskTracker-Phi3",
+    "Phi-3/PromptShield-v1"
+   ],
+   "char 5-gram J >=0.7": [
+    "GPT/AllCombined",
+    "GPT/LLMJudge",
+    "Phi-3/LLMJudge",
+    "GPT/TaskTracker-Phi3",
+    "GPT/PromptShield-v1",
+    "Phi-3/AllCombined",
+    "Phi-3/TaskTracker-Phi3",
+    "Phi-3/PromptShield-v1"
+   ],
+   "seq ratio >=0.7 (order-sensitive)": [
+    "GPT/AllCombined",
+    "Phi-3/AllCombined",
+    "Phi-3/LLMJudge",
+    "GPT/LLMJudge",
+    "GPT/TaskTracker-Phi3",
+    "GPT/PromptShield-v1",
+    "Phi-3/TaskTracker-Phi3",
+    "Phi-3/PromptShield-v1"
+   ],
+   "seq ratio >=0.85 (strict)": [
+    "GPT/AllCombined",
+    "GPT/LLMJudge",
+    "Phi-3/LLMJudge",
+    "GPT/TaskTracker-Phi3",
+    "Phi-3/AllCombined",
+    "Phi-3/TaskTracker-Phi3",
+    "GPT/PromptShield-v1",
+    "Phi-3/PromptShield-v1"
+   ]
+  },
+  "judge_lowest_always": true
+ }
+}

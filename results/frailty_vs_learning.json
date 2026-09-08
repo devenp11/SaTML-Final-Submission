@@ -1,0 +1,525 @@
+{
+ "T1": [
+  {
+   "phase": 1,
+   "model": "GPT",
+   "defense": "LLMJudge",
+   "n": 11,
+   "med_first": 140.0,
+   "med_gap2": 10.0,
+   "frac_faster": 0.7272727272727273
+  },
+  {
+   "phase": 1,
+   "model": "GPT",
+   "defense": "PromptShield-v1",
+   "n": 25,
+   "med_first": 40.0,
+   "med_gap2": 5.0,
+   "frac_faster": 0.8
+  },
+  {
+   "phase": 1,
+   "model": "GPT",
+   "defense": "Spotlight",
+   "n": 11,
+   "med_first": 14.0,
+   "med_gap2": 15.0,
+   "frac_faster": 0.2727272727272727
+  },
+  {
+   "phase": 1,
+   "model": "GPT",
+   "defense": "TaskTracker-Phi3",
+   "n": 16,
+   "med_first": 85.0,
+   "med_gap2": 16.0,
+   "frac_faster": 0.75
+  },
+  {
+   "phase": 1,
+   "model": "Phi-3",
+   "defense": "LLMJudge",
+   "n": 13,
+   "med_first": 250.0,
+   "med_gap2": 104.0,
+   "frac_faster": 0.6153846153846154
+  },
+  {
+   "phase": 1,
+   "model": "Phi-3",
+   "defense": "PromptShield-v1",
+   "n": 72,
+   "med_first": 30.5,
+   "med_gap2": 12.0,
+   "frac_faster": 0.6111111111111112
+  },
+  {
+   "phase": 1,
+   "model": "Phi-3",
+   "defense": "Spotlight",
+   "n": 12,
+   "med_first": 57.5,
+   "med_gap2": 11.0,
+   "frac_faster": 0.6666666666666666
+  },
+  {
+   "phase": 1,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi3",
+   "n": 46,
+   "med_first": 32.0,
+   "med_gap2": 10.0,
+   "frac_faster": 0.5434782608695652
+  },
+  {
+   "phase": 2,
+   "model": "GPT",
+   "defense": "PromptShield-v2",
+   "n": 5,
+   "med_first": 6.0,
+   "med_gap2": 106.0,
+   "frac_faster": 0.2
+  },
+  {
+   "phase": 2,
+   "model": "GPT",
+   "defense": "TaskTracker-Phi3",
+   "n": 6,
+   "med_first": 35.5,
+   "med_gap2": 2.5,
+   "frac_faster": 1.0
+  },
+  {
+   "phase": 2,
+   "model": "Phi-3",
+   "defense": "LLMJudge",
+   "n": 5,
+   "med_first": 1037.0,
+   "med_gap2": 126.0,
+   "frac_faster": 0.6
+  },
+  {
+   "phase": 2,
+   "model": "Phi-3",
+   "defense": "PromptShield-v2",
+   "n": 18,
+   "med_first": 36.0,
+   "med_gap2": 3.5,
+   "frac_faster": 0.8333333333333334
+  },
+  {
+   "phase": 2,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi3",
+   "n": 17,
+   "med_first": 13.0,
+   "med_gap2": 5.0,
+   "frac_faster": 0.7647058823529411
+  },
+  {
+   "phase": 2,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi3.5MoE",
+   "n": 17,
+   "med_first": 25.0,
+   "med_gap2": 3.0,
+   "frac_faster": 0.6470588235294118
+  },
+  {
+   "phase": 2,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi4",
+   "n": 12,
+   "med_first": 11.5,
+   "med_gap2": 16.5,
+   "frac_faster": 0.6666666666666666
+  }
+ ],
+ "T2": [
+  {
+   "phase": 1,
+   "level": 1,
+   "model": "GPT",
+   "defense": "AllCombined",
+   "slope": -0.7665538523828543,
+   "bins": 3
+  },
+  {
+   "phase": 1,
+   "level": 1,
+   "model": "GPT",
+   "defense": "LLMJudge",
+   "slope": -0.5317704402459821,
+   "bins": 6
+  },
+  {
+   "phase": 1,
+   "level": 1,
+   "model": "GPT",
+   "defense": "PromptShield-v1",
+   "slope": -0.5289396897972595,
+   "bins": 9
+  },
+  {
+   "phase": 1,
+   "level": 1,
+   "model": "GPT",
+   "defense": "Spotlight",
+   "slope": -0.4673482721819311,
+   "bins": 8
+  },
+  {
+   "phase": 1,
+   "level": 1,
+   "model": "GPT",
+   "defense": "TaskTracker-Phi3",
+   "slope": -0.6244823268324529,
+   "bins": 9
+  },
+  {
+   "phase": 1,
+   "level": 1,
+   "model": "Phi-3",
+   "defense": "AllCombined",
+   "slope": -0.833134813435289,
+   "bins": 3
+  },
+  {
+   "phase": 1,
+   "level": 1,
+   "model": "Phi-3",
+   "defense": "LLMJudge",
+   "slope": -0.36023226581538115,
+   "bins": 7
+  },
+  {
+   "phase": 1,
+   "level": 1,
+   "model": "Phi-3",
+   "defense": "PromptShield-v1",
+   "slope": -0.22724022795986157,
+   "bins": 8
+  },
+  {
+   "phase": 1,
+   "level": 1,
+   "model": "Phi-3",
+   "defense": "Spotlight",
+   "slope": -0.31941839252023263,
+   "bins": 9
+  },
+  {
+   "phase": 1,
+   "level": 1,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi3",
+   "slope": -0.5503810978064451,
+   "bins": 10
+  },
+  {
+   "phase": 1,
+   "level": 2,
+   "model": "GPT",
+   "defense": "AllCombined",
+   "slope": -0.6923460345741295,
+   "bins": 4
+  },
+  {
+   "phase": 1,
+   "level": 2,
+   "model": "GPT",
+   "defense": "LLMJudge",
+   "slope": -0.572127244467251,
+   "bins": 4
+  },
+  {
+   "phase": 1,
+   "level": 2,
+   "model": "GPT",
+   "defense": "PromptShield-v1",
+   "slope": -0.6644016917327379,
+   "bins": 8
+  },
+  {
+   "phase": 1,
+   "level": 2,
+   "model": "GPT",
+   "defense": "Spotlight",
+   "slope": -0.3960894901366275,
+   "bins": 7
+  },
+  {
+   "phase": 1,
+   "level": 2,
+   "model": "GPT",
+   "defense": "TaskTracker-Phi3",
+   "slope": -0.5369350685965958,
+   "bins": 8
+  },
+  {
+   "phase": 1,
+   "level": 2,
+   "model": "Phi-3",
+   "defense": "LLMJudge",
+   "slope": -0.4626399633270404,
+   "bins": 7
+  },
+  {
+   "phase": 1,
+   "level": 2,
+   "model": "Phi-3",
+   "defense": "PromptShield-v1",
+   "slope": -0.17915992939264788,
+   "bins": 7
+  },
+  {
+   "phase": 1,
+   "level": 2,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi3",
+   "slope": -0.61939689103633,
+   "bins": 9
+  },
+  {
+   "phase": 1,
+   "level": 3,
+   "model": "GPT",
+   "defense": "LLMJudge",
+   "slope": -0.6708820043026756,
+   "bins": 3
+  },
+  {
+   "phase": 1,
+   "level": 3,
+   "model": "GPT",
+   "defense": "PromptShield-v1",
+   "slope": -0.5173474306179457,
+   "bins": 9
+  },
+  {
+   "phase": 1,
+   "level": 3,
+   "model": "GPT",
+   "defense": "Spotlight",
+   "slope": -0.6248684414096382,
+   "bins": 6
+  },
+  {
+   "phase": 1,
+   "level": 3,
+   "model": "GPT",
+   "defense": "TaskTracker-Phi3",
+   "slope": -0.3040304471608911,
+   "bins": 7
+  },
+  {
+   "phase": 1,
+   "level": 3,
+   "model": "Phi-3",
+   "defense": "LLMJudge",
+   "slope": -0.8352993472165298,
+   "bins": 6
+  },
+  {
+   "phase": 1,
+   "level": 3,
+   "model": "Phi-3",
+   "defense": "PromptShield-v1",
+   "slope": -0.43058648809708483,
+   "bins": 9
+  },
+  {
+   "phase": 1,
+   "level": 3,
+   "model": "Phi-3",
+   "defense": "Spotlight",
+   "slope": -0.8984087774428116,
+   "bins": 4
+  },
+  {
+   "phase": 1,
+   "level": 3,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi3",
+   "slope": -0.6051656939902607,
+   "bins": 10
+  },
+  {
+   "phase": 1,
+   "level": 4,
+   "model": "GPT",
+   "defense": "LLMJudge",
+   "slope": -0.8536914986279075,
+   "bins": 5
+  },
+  {
+   "phase": 1,
+   "level": 4,
+   "model": "GPT",
+   "defense": "PromptShield-v1",
+   "slope": -0.6618876187651176,
+   "bins": 9
+  },
+  {
+   "phase": 1,
+   "level": 4,
+   "model": "GPT",
+   "defense": "Spotlight",
+   "slope": -0.7639956155146683,
+   "bins": 3
+  },
+  {
+   "phase": 1,
+   "level": 4,
+   "model": "GPT",
+   "defense": "TaskTracker-Phi3",
+   "slope": -0.6283844418642583,
+   "bins": 7
+  },
+  {
+   "phase": 1,
+   "level": 4,
+   "model": "Phi-3",
+   "defense": "LLMJudge",
+   "slope": -0.8037981482897858,
+   "bins": 6
+  },
+  {
+   "phase": 1,
+   "level": 4,
+   "model": "Phi-3",
+   "defense": "PromptShield-v1",
+   "slope": -0.08541504449083466,
+   "bins": 9
+  },
+  {
+   "phase": 1,
+   "level": 4,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi3",
+   "slope": -0.5552988679955232,
+   "bins": 8
+  },
+  {
+   "phase": 2,
+   "level": 1,
+   "model": "GPT",
+   "defense": "PromptShield-v2",
+   "slope": -0.88976316367393,
+   "bins": 5
+  },
+  {
+   "phase": 2,
+   "level": 1,
+   "model": "GPT",
+   "defense": "TaskTracker-Phi3",
+   "slope": -0.5681081444412504,
+   "bins": 4
+  },
+  {
+   "phase": 2,
+   "level": 1,
+   "model": "Phi-3",
+   "defense": "LLMJudge",
+   "slope": -0.24882935313242996,
+   "bins": 3
+  },
+  {
+   "phase": 2,
+   "level": 1,
+   "model": "Phi-3",
+   "defense": "PromptShield-v2",
+   "slope": -0.1116361690522025,
+   "bins": 7
+  },
+  {
+   "phase": 2,
+   "level": 1,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi3",
+   "slope": -0.4632165875909087,
+   "bins": 8
+  },
+  {
+   "phase": 2,
+   "level": 1,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi3.5MoE",
+   "slope": -0.5042892255714972,
+   "bins": 8
+  },
+  {
+   "phase": 2,
+   "level": 1,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi4",
+   "slope": -0.6407655147047588,
+   "bins": 8
+  },
+  {
+   "phase": 2,
+   "level": 2,
+   "model": "GPT",
+   "defense": "PromptShield-v2",
+   "slope": -1.3972079331750533,
+   "bins": 3
+  },
+  {
+   "phase": 2,
+   "level": 2,
+   "model": "GPT",
+   "defense": "TaskTracker-Phi4",
+   "slope": -0.2568385998456978,
+   "bins": 3
+  },
+  {
+   "phase": 2,
+   "level": 2,
+   "model": "Phi-3",
+   "defense": "AllCombined",
+   "slope": -1.9098823137917118,
+   "bins": 3
+  },
+  {
+   "phase": 2,
+   "level": 2,
+   "model": "Phi-3",
+   "defense": "LLMJudge",
+   "slope": -0.4203196598661139,
+   "bins": 4
+  },
+  {
+   "phase": 2,
+   "level": 2,
+   "model": "Phi-3",
+   "defense": "PromptShield-v2",
+   "slope": -0.7216528973554008,
+   "bins": 5
+  },
+  {
+   "phase": 2,
+   "level": 2,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi3",
+   "slope": -0.6192835337369602,
+   "bins": 4
+  },
+  {
+   "phase": 2,
+   "level": 2,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi3.5MoE",
+   "slope": -0.9301490559799245,
+   "bins": 5
+  },
+  {
+   "phase": 2,
+   "level": 2,
+   "model": "Phi-3",
+   "defense": "TaskTracker-Phi4",
+   "slope": -0.7022701244978268,
+   "bins": 8
+  }
+ ]
+}

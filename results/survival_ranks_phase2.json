@@ -1,0 +1,230 @@
+{
+  "Phi-3": {
+    "rows": [
+      {
+        "defense": "AllCombined",
+        "teams": 26,
+        "asr": 0.0004366812227074236,
+        "asr_ci": [
+          0.0,
+          0.0029225954786940085
+        ],
+        "surv": 1.0,
+        "surv_ci": [
+          1.0,
+          1.0
+        ],
+        "km_median": 1108.0
+      },
+      {
+        "defense": "PromptShield-v2",
+        "teams": 87,
+        "asr": 0.014925373134328358,
+        "asr_ci": [
+          0.0074012563711625306,
+          0.028140372376060725
+        ],
+        "surv": 0.9277668013460637,
+        "surv_ci": [
+          0.8614503382932925,
+          0.9846212121212121
+        ],
+        "km_median": 79.0
+      },
+      {
+        "defense": "LLMJudge",
+        "teams": 35,
+        "asr": 0.0011083583257269526,
+        "asr_ci": [
+          0.00036537516072290117,
+          0.0024916897320585375
+        ],
+        "surv": 1.0,
+        "surv_ci": [
+          1.0,
+          1.0
+        ],
+        "km_median": 1159.0
+      },
+      {
+        "defense": "TaskTracker-Phi3.5MoE",
+        "teams": 33,
+        "asr": 0.01069883906214432,
+        "asr_ci": [
+          0.005049404714775829,
+          0.030047087067931636
+        ],
+        "surv": 0.6680378445084327,
+        "surv_ci": [
+          0.4720041322314049,
+          0.8500471750471744
+        ],
+        "km_median": 60.0
+      },
+      {
+        "defense": "TaskTracker-Phi3",
+        "teams": 44,
+        "asr": 0.010723296888141295,
+        "asr_ci": [
+          0.004585267787293378,
+          0.03210817796768485
+        ],
+        "surv": 0.8191169136506128,
+        "surv_ci": [
+          0.6816726734190849,
+          0.9423701298701299
+        ],
+        "km_median": 21.0
+      },
+      {
+        "defense": "TaskTracker-Phi4",
+        "teams": 29,
+        "asr": 0.005902343051332499,
+        "asr_ci": [
+          0.003232502748795209,
+          0.0116191697761194
+        ],
+        "surv": 0.6280193236714976,
+        "surv_ci": [
+          0.42349673202614374,
+          0.8465608465608465
+        ],
+        "km_median": 79.0
+      }
+    ],
+    "by_asr": [
+      "AllCombined",
+      "LLMJudge",
+      "TaskTracker-Phi4",
+      "TaskTracker-Phi3.5MoE",
+      "TaskTracker-Phi3",
+      "PromptShield-v2"
+    ],
+    "by_surv": [
+      "AllCombined",
+      "LLMJudge",
+      "PromptShield-v2",
+      "TaskTracker-Phi3",
+      "TaskTracker-Phi3.5MoE",
+      "TaskTracker-Phi4"
+    ],
+    "pct_order_disagree": 99.9,
+    "pct_top_differs": 27.6
+  },
+  "GPT": {
+    "rows": [
+      {
+        "defense": "AllCombined",
+        "teams": 20,
+        "asr": 0.0,
+        "asr_ci": [
+          0.0,
+          0.0
+        ],
+        "surv": 1.0,
+        "surv_ci": [
+          1.0,
+          1.0
+        ],
+        "km_median": Infinity
+      },
+      {
+        "defense": "PromptShield-v2",
+        "teams": 49,
+        "asr": 0.0005739822065515969,
+        "asr_ci": [
+          0.00012319137039234847,
+          0.00450261707837422
+        ],
+        "surv": 0.9642857142857143,
+        "surv_ci": [
+          0.875,
+          1.0
+        ],
+        "km_median": 752.0
+      },
+      {
+        "defense": "LLMJudge",
+        "teams": 26,
+        "asr": 0.0024984384759525295,
+        "asr_ci": [
+          0.0,
+          0.009080490086790332
+        ],
+        "surv": 0.9444444444444444,
+        "surv_ci": [
+          0.8125,
+          1.0
+        ],
+        "km_median": Infinity
+      },
+      {
+        "defense": "TaskTracker-Phi3.5MoE",
+        "teams": 23,
+        "asr": 0.00597460791635549,
+        "asr_ci": [
+          0.0012770578617273104,
+          0.01887176989335519
+        ],
+        "surv": 0.9565217391304348,
+        "surv_ci": [
+          0.8695652173913043,
+          1.0
+        ],
+        "km_median": 275.0
+      },
+      {
+        "defense": "TaskTracker-Phi3",
+        "teams": 30,
+        "asr": 0.002626238510206518,
+        "asr_ci": [
+          0.0005561985340088146,
+          0.02535690408341397
+        ],
+        "surv": 0.8025770308123249,
+        "surv_ci": [
+          0.6151236044657097,
+          0.9666666666666667
+        ],
+        "km_median": 225.0
+      },
+      {
+        "defense": "TaskTracker-Phi4",
+        "teams": 18,
+        "asr": 0.0037735849056603774,
+        "asr_ci": [
+          0.0,
+          0.009901481219550524
+        ],
+        "surv": 1.0,
+        "surv_ci": [
+          1.0,
+          1.0
+        ],
+        "km_median": 752.0
+      }
+    ],
+    "by_asr": [
+      "AllCombined",
+      "PromptShield-v2",
+      "LLMJudge",
+      "TaskTracker-Phi3",
+      "TaskTracker-Phi4",
+      "TaskTracker-Phi3.5MoE"
+    ],
+    "by_surv": [
+      "AllCombined",
+      "TaskTracker-Phi4",
+      "PromptShield-v2",
+      "TaskTracker-Phi3.5MoE",
+      "LLMJudge",
+      "TaskTracker-Phi3"
+    ],
+    "pct_order_disagree": 97.7,
+    "pct_top_differs": 0.0
+  },
+  "logrank_TT3_vs_PS2_phi3": {
+    "chi2": 3.964858264268127,
+    "p": 0.04645943303559058
+  }
+}

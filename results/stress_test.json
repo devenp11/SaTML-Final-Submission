@@ -1,0 +1,238 @@
+{
+  "phase1/Phi-3": {
+    "asr_order": [
+      "AllCombined",
+      "LLMJudge",
+      "Spotlight",
+      "TaskTracker-Phi3",
+      "PromptShield-v1"
+    ],
+    "surv_orders": {
+      "5": [
+        "AllCombined",
+        "LLMJudge",
+        "Spotlight",
+        "PromptShield-v1",
+        "TaskTracker-Phi3"
+      ],
+      "10": [
+        "AllCombined",
+        "LLMJudge",
+        "Spotlight",
+        "PromptShield-v1",
+        "TaskTracker-Phi3"
+      ],
+      "20": [
+        "AllCombined",
+        "LLMJudge",
+        "Spotlight",
+        "PromptShield-v1",
+        "TaskTracker-Phi3"
+      ],
+      "50": [
+        "AllCombined",
+        "LLMJudge",
+        "Spotlight",
+        "TaskTracker-Phi3",
+        "PromptShield-v1"
+      ],
+      "100": [
+        "AllCombined",
+        "LLMJudge",
+        "Spotlight",
+        "TaskTracker-Phi3",
+        "PromptShield-v1"
+      ]
+    },
+    "horizon_stable": false,
+    "agrees_with_asr": {
+      "5": false,
+      "10": false,
+      "20": false,
+      "50": true,
+      "100": true
+    },
+    "n_sig_paired": 8,
+    "n_pairs": 10
+  },
+  "phase1/GPT": {
+    "asr_order": [
+      "AllCombined",
+      "TaskTracker-Phi3",
+      "LLMJudge",
+      "PromptShield-v1",
+      "Spotlight"
+    ],
+    "surv_orders": {
+      "5": [
+        "AllCombined",
+        "PromptShield-v1",
+        "TaskTracker-Phi3",
+        "LLMJudge",
+        "Spotlight"
+      ],
+      "10": [
+        "PromptShield-v1",
+        "LLMJudge",
+        "AllCombined",
+        "TaskTracker-Phi3",
+        "Spotlight"
+      ],
+      "20": [
+        "LLMJudge",
+        "AllCombined",
+        "PromptShield-v1",
+        "Spotlight",
+        "TaskTracker-Phi3"
+      ],
+      "50": [
+        "LLMJudge",
+        "AllCombined",
+        "PromptShield-v1",
+        "Spotlight",
+        "TaskTracker-Phi3"
+      ],
+      "100": [
+        "AllCombined",
+        "LLMJudge",
+        "PromptShield-v1",
+        "TaskTracker-Phi3",
+        "Spotlight"
+      ]
+    },
+    "horizon_stable": false,
+    "agrees_with_asr": {
+      "5": false,
+      "10": false,
+      "20": false,
+      "50": false,
+      "100": false
+    },
+    "n_sig_paired": 0,
+    "n_pairs": 10
+  },
+  "phase2/Phi-3": {
+    "asr_order": [
+      "AllCombined",
+      "LLMJudge",
+      "TaskTracker-Phi4",
+      "TaskTracker-Phi3.5MoE",
+      "TaskTracker-Phi3",
+      "PromptShield-v2"
+    ],
+    "surv_orders": {
+      "5": [
+        "AllCombined",
+        "LLMJudge",
+        "PromptShield-v2",
+        "TaskTracker-Phi4",
+        "TaskTracker-Phi3",
+        "TaskTracker-Phi3.5MoE"
+      ],
+      "10": [
+        "AllCombined",
+        "LLMJudge",
+        "PromptShield-v2",
+        "TaskTracker-Phi3",
+        "TaskTracker-Phi3.5MoE",
+        "TaskTracker-Phi4"
+      ],
+      "20": [
+        "AllCombined",
+        "LLMJudge",
+        "PromptShield-v2",
+        "TaskTracker-Phi3.5MoE",
+        "TaskTracker-Phi4",
+        "TaskTracker-Phi3"
+      ],
+      "50": [
+        "AllCombined",
+        "LLMJudge",
+        "PromptShield-v2",
+        "TaskTracker-Phi4",
+        "TaskTracker-Phi3.5MoE",
+        "TaskTracker-Phi3"
+      ],
+      "100": [
+        "LLMJudge",
+        "AllCombined",
+        "TaskTracker-Phi4",
+        "PromptShield-v2",
+        "TaskTracker-Phi3.5MoE",
+        "TaskTracker-Phi3"
+      ]
+    },
+    "horizon_stable": false,
+    "agrees_with_asr": {
+      "5": false,
+      "10": false,
+      "20": false,
+      "50": false,
+      "100": false
+    },
+    "n_sig_paired": 4,
+    "n_pairs": 15
+  },
+  "phase2/GPT": {
+    "asr_order": [
+      "AllCombined",
+      "PromptShield-v2",
+      "LLMJudge",
+      "TaskTracker-Phi3",
+      "TaskTracker-Phi4",
+      "TaskTracker-Phi3.5MoE"
+    ],
+    "surv_orders": {
+      "5": [
+        "AllCombined",
+        "PromptShield-v2",
+        "TaskTracker-Phi4",
+        "TaskTracker-Phi3.5MoE",
+        "LLMJudge",
+        "TaskTracker-Phi3"
+      ],
+      "10": [
+        "AllCombined",
+        "TaskTracker-Phi4",
+        "PromptShield-v2",
+        "TaskTracker-Phi3.5MoE",
+        "LLMJudge",
+        "TaskTracker-Phi3"
+      ],
+      "20": [
+        "AllCombined",
+        "TaskTracker-Phi4",
+        "PromptShield-v2",
+        "TaskTracker-Phi3.5MoE",
+        "LLMJudge",
+        "TaskTracker-Phi3"
+      ],
+      "50": [
+        "AllCombined",
+        "PromptShield-v2",
+        "TaskTracker-Phi4",
+        "LLMJudge",
+        "TaskTracker-Phi3",
+        "TaskTracker-Phi3.5MoE"
+      ],
+      "100": [
+        "AllCombined",
+        "PromptShield-v2",
+        "LLMJudge",
+        "TaskTracker-Phi4",
+        "TaskTracker-Phi3",
+        "TaskTracker-Phi3.5MoE"
+      ]
+    },
+    "horizon_stable": false,
+    "agrees_with_asr": {
+      "5": false,
+      "10": false,
+      "20": false,
+      "50": false,
+      "100": false
+    },
+    "n_sig_paired": 0,
+    "n_pairs": 12
+  }
+}

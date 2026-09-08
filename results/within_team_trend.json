@@ -1,0 +1,196 @@
+{
+ "all": {
+  "cells": [
+   {
+    "phase": 1,
+    "model": "GPT",
+    "defense": "PromptShield-v1",
+    "teams": 27,
+    "mean": 0.21880403313777386,
+    "ci": [
+     0.12713871268805363,
+     0.3040146339385829
+    ],
+    "verdict": "LATE"
+   },
+   {
+    "phase": 1,
+    "model": "GPT",
+    "defense": "TaskTracker-Phi3",
+    "teams": 18,
+    "mean": 0.15339330142468685,
+    "ci": [
+     0.04085220017407071,
+     0.26702055833628674
+    ],
+    "verdict": "LATE"
+   },
+   {
+    "phase": 1,
+    "model": "Phi-3",
+    "defense": "LLMJudge",
+    "teams": 22,
+    "mean": 0.12465915673756375,
+    "ci": [
+     0.029518666584572795,
+     0.21556692579968337
+    ],
+    "verdict": "LATE"
+   },
+   {
+    "phase": 1,
+    "model": "Phi-3",
+    "defense": "PromptShield-v1",
+    "teams": 92,
+    "mean": 0.13390897620737685,
+    "ci": [
+     0.0893101927644013,
+     0.1777282505818352
+    ],
+    "verdict": "LATE"
+   },
+   {
+    "phase": 1,
+    "model": "Phi-3",
+    "defense": "Spotlight",
+    "teams": 35,
+    "mean": 0.02953127524183925,
+    "ci": [
+     -0.06782083414352331,
+     0.1353312596982113
+    ],
+    "verdict": "ns"
+   },
+   {
+    "phase": 1,
+    "model": "Phi-3",
+    "defense": "TaskTracker-Phi3",
+    "teams": 54,
+    "mean": 0.08016534544735351,
+    "ci": [
+     0.02139668838575207,
+     0.13863444671723754
+    ],
+    "verdict": "LATE"
+   },
+   {
+    "phase": 2,
+    "model": "Phi-3",
+    "defense": "PromptShield-v2",
+    "teams": 23,
+    "mean": 0.2631331514952354,
+    "ci": [
+     0.1759890601310764,
+     0.3394452688801636
+    ],
+    "verdict": "LATE"
+   },
+   {
+    "phase": 2,
+    "model": "Phi-3",
+    "defense": "TaskTracker-Phi3",
+    "teams": 18,
+    "mean": 0.30238004849378475,
+    "ci": [
+     0.24762982982556705,
+     0.35605684142313365
+    ],
+    "verdict": "LATE"
+   },
+   {
+    "phase": 2,
+    "model": "Phi-3",
+    "defense": "TaskTracker-Phi3.5MoE",
+    "teams": 16,
+    "mean": 0.11217999821902878,
+    "ci": [
+     -0.000758592369119165,
+     0.22323880981559524
+    ],
+    "verdict": "ns"
+   }
+  ],
+  "pooled_n": 305,
+  "pooled_mean": 0.13896138424942225,
+  "pooled_ci": [
+   0.11184816872614263,
+   0.16612560042911692
+  ],
+  "verdict": "LATE (claim 1 FAILS)",
+  "n_early": 0,
+  "n_late": 7
+ },
+ "quitters_dropped": {
+  "cells": [
+   {
+    "phase": 1,
+    "model": "GPT",
+    "defense": "PromptShield-v1",
+    "teams": 18,
+    "mean": 0.15754738660824077,
+    "ci": [
+     0.04418955040659444,
+     0.27235532687916386
+    ],
+    "verdict": "LATE"
+   },
+   {
+    "phase": 1,
+    "model": "Phi-3",
+    "defense": "LLMJudge",
+    "teams": 17,
+    "mean": 0.1260983496287836,
+    "ci": [
+     0.005941728196215485,
+     0.2446010319266094
+    ],
+    "verdict": "LATE"
+   },
+   {
+    "phase": 1,
+    "model": "Phi-3",
+    "defense": "PromptShield-v1",
+    "teams": 70,
+    "mean": 0.07274381602433695,
+    "ci": [
+     0.02705191570163306,
+     0.11852204252991123
+    ],
+    "verdict": "LATE"
+   },
+   {
+    "phase": 1,
+    "model": "Phi-3",
+    "defense": "Spotlight",
+    "teams": 33,
+    "mean": 0.0010180191958901136,
+    "ci": [
+     -0.10101458075767035,
+     0.10993315094664377
+    ],
+    "verdict": "ns"
+   },
+   {
+    "phase": 1,
+    "model": "Phi-3",
+    "defense": "TaskTracker-Phi3",
+    "teams": 42,
+    "mean": 0.062311455858946395,
+    "ci": [
+     -0.008836340807199987,
+     0.12709299279248248
+    ],
+    "verdict": "ns"
+   }
+  ],
+  "pooled_n": 180,
+  "pooled_mean": 0.07067926557711869,
+  "pooled_ci": [
+   0.033807395038858865,
+   0.10627605807426953
+  ],
+  "verdict": "LATE (claim 1 FAILS)",
+  "n_early": 0,
+  "n_late": 3
+ }
+}

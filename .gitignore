@@ -1,0 +1,101 @@
+# ---------------------------------------------------------------- datasets
+# The corpora are public and are not redistributed. See README section 2.
+data/
+results/*.csv
+results/*.png
+
+# ------------------------------------------------------- author identity
+# Anything that would de-anonymize a double-blind submission. build_tex.py falls
+# back to an anonymous author block when author_identity.py is absent, so the
+# reviewer-facing build is anonymous by construction.
+#
+# The rules below are deliberately globs rather than literal filenames: a rule
+# naming the file would itself leak the author's name.
+paper/author_identity.py
+paper/tex/anon_audit.py
+# the named LaTeX build
+paper/tex/main.tex
+paper/tex/main.pdf
+# every PDF in paper/ except the anonymous deliverable
+paper/*.pdf
+!paper/paper_anonymous.pdf
+
+# --------------------------------------------------- personal deployment
+# Remote-GPU helper scripts: they contain an account-scoped SSH endpoint and a
+# private key path, and reviewers do not need them.
+podput.sh
+podrun.sh
+RUNBOOK.md
+
+# ------------------------------------------------- internal-only material
+notes/
+paper/_superseded/
+SUBMISSION_AUDIT.md
+FINAL_SUBMISSION_AUDIT.md
+GITHUB_ANONYMITY_AUDIT.md
+make_artifact.py
+paper/final_pass*.py
+paper/patch_draft.py
+paper/fix_author_block.py
+paper/fix_equations.py
+paper/build_html.py
+paper/build_ieee.py
+
+# staging area for files pulled off the GPU volume; never committed
+_incoming/
+
+# --------------------------------------------------- LaTeX build products
+# Every one of these embeds the absolute TeX path, i.e. the Windows username.
+# main_anon.bbl is the exception: the anonymous build needs it, so it is forced
+# back in at the bottom of this file.
+*.aux
+*.log
+*.out
+*.blg
+*.bl
+*.bbl
+*.blg2
+*.bib.log
+*.p1
+*.p2
+*.p3
+*.toc
+*.synctex
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
+missfont.log
+
+# ------------------------------------------------------------- web fonts
+paper/fonts/
+
+# ------------------------------------------------------------- archives
+*.zip
+
+# ------------------------------------------------------ tooling and cruft
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+paper/screen_check.png
+paper/ieee_*.png
+paper/crop_*.png
+
+# ------------------------------------------------------------ exceptions
+# Required by the anonymous LaTeX build, so re-include it after *.bbl above.
+!paper/tex/main_anon.bbl

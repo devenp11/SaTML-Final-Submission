@@ -1,0 +1,11 @@
+{
+ "families": 289,
+ "rows": 18315,
+ "unique": 9392,
+ "by_kind": {
+  "family_seed": 289,
+  "exact_dup": 1354,
+  "near_variant": 16469,
+  "benign": 203
+ }
+}

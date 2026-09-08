@@ -1,0 +1,9 @@
+{
+ "n_families": 289,
+ "n_unique_payloads": 9232,
+ "n_benign": 203,
+ "median_tokens": 635.625,
+ "mean_tokens": 736.5908795493934,
+ "p90_tokens": 2130.1249999999986,
+ "max_tokens": 7879.25
+}

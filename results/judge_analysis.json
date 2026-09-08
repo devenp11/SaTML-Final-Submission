@@ -1,0 +1,32 @@
+{
+ "T0.0_k2_s_dry": {
+  "draws": 2,
+  "threshold": 0.9504776228569629,
+  "fpr": 0.05,
+  "determinism": 1.0,
+  "families": 96,
+  "n_near": 1700,
+  "fsr": 0.9247058823529412,
+  "ci": [
+   0.854759974811758,
+   0.9699625041336125
+  ],
+  "family_set": "real",
+  "seeds_passing_judge": 102
+ },
+ "T1.0_k5_s_dry": {
+  "draws": 5,
+  "threshold": 0.9752482060035104,
+  "fpr": 0.05,
+  "determinism": 0.8632075471698113,
+  "families": 96,
+  "n_near": 1700,
+  "fsr": 0.9321176470588236,
+  "ci": [
+   0.914424320371955,
+   0.9538501483679523
+  ],
+  "family_set": "real",
+  "seeds_passing_judge": 105
+ }
+}

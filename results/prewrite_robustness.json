@@ -1,0 +1,150 @@
+{
+ "R1_llmail": {
+  "bins": 5,
+  "mean": -0.00804079367770537,
+  "ci": [
+   -0.010871391974451548,
+   -0.004472234230599651
+  ],
+  "verdict": "FALLS"
+ },
+ "R1_tensortrust": {
+  "bins": 8,
+  "mean": -0.12999894214791113,
+  "ci": [
+   -0.15888710107132198,
+   -0.10548341217435954
+  ],
+  "verdict": "FALLS"
+ },
+ "R2_llmail_level_fixed": {
+  "windows": 238,
+  "mean": 0.04209136803923495,
+  "ci": [
+   0.023991666095316246,
+   0.06078404878904222
+  ],
+  "verdict": "RISES"
+ },
+ "R3": {
+  "thresholds": [
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.9
+  ],
+  "table": {
+   "GPT/AllCombined": [
+    0.12724935732647816,
+    0.07538601271571299,
+    0.05697445972495088,
+    0.05651672433679354,
+    0.05509964830011723
+   ],
+   "GPT/LLMJudge": [
+    0.3476005188067445,
+    0.3608815426997245,
+    0.3663157894736842,
+    0.38303341902313626,
+    0.3654618473895582
+   ],
+   "GPT/PromptShield-v1": [
+    0.4369747899159664,
+    0.3984819734345351,
+    0.3814580941446613,
+    0.3391664015272033,
+    0.6206361520558572
+   ],
+   "GPT/TaskTracker-Phi3": [
+    0.4151720794958798,
+    0.42201327433628316,
+    0.43828264758497315,
+    0.3905595736581652,
+    0.47071277346506707
+   ],
+   "Phi-3/AllCombined": [
+    0.31106471816283926,
+    0.30406852248394006,
+    0.5875,
+    0.7109375,
+    0.746268656716418
+   ],
+   "Phi-3/LLMJudge": [
+    0.4870676223122468,
+    0.4948708878669968,
+    0.5009777082518576,
+    0.5079691516709511,
+    0.4947575360419397
+   ],
+   "Phi-3/PromptShield-v1": [
+    0.8566115702479339,
+    0.8857908847184987,
+    0.8848973607038123,
+    0.9141274238227147,
+    0.9035460992907801
+   ],
+   "Phi-3/TaskTracker-Phi3": [
+    0.8174740484429066,
+    0.8319844609906119,
+    0.8443833734111988,
+    0.8598979013045944,
+    0.7755555555555556
+   ]
+  },
+  "orderings": [
+   [
+    "GPT/AllCombined",
+    "Phi-3/AllCombined",
+    "GPT/LLMJudge",
+    "GPT/TaskTracker-Phi3",
+    "GPT/PromptShield-v1",
+    "Phi-3/LLMJudge",
+    "Phi-3/TaskTracker-Phi3",
+    "Phi-3/PromptShield-v1"
+   ],
+   [
+    "GPT/AllCombined",
+    "Phi-3/AllCombined",
+    "GPT/LLMJudge",
+    "GPT/PromptShield-v1",
+    "GPT/TaskTracker-Phi3",
+    "Phi-3/LLMJudge",
+    "Phi-3/TaskTracker-Phi3",
+    "Phi-3/PromptShield-v1"
+   ],
+   [
+    "GPT/AllCombined",
+    "GPT/LLMJudge",
+    "GPT/PromptShield-v1",
+    "GPT/TaskTracker-Phi3",
+    "Phi-3/LLMJudge",
+    "Phi-3/AllCombined",
+    "Phi-3/TaskTracker-Phi3",
+    "Phi-3/PromptShield-v1"
+   ],
+   [
+    "GPT/AllCombined",
+    "GPT/PromptShield-v1",
+    "GPT/LLMJudge",
+    "GPT/TaskTracker-Phi3",
+    "Phi-3/LLMJudge",
+    "Phi-3/AllCombined",
+    "Phi-3/TaskTracker-Phi3",
+    "Phi-3/PromptShield-v1"
+   ],
+   [
+    "GPT/AllCombined",
+    "GPT/LLMJudge",
+    "GPT/TaskTracker-Phi3",
+    "Phi-3/LLMJudge",
+    "GPT/PromptShield-v1",
+    "Phi-3/AllCombined",
+    "Phi-3/TaskTracker-Phi3",
+    "Phi-3/PromptShield-v1"
+   ]
+  ],
+  "ordering_stable": false,
+  "judge_lowest_always": true
+ }
+}

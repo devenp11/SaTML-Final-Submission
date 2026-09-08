@@ -1,0 +1,11 @@
+# Analysis and figure generation. Versions are those the reported results were
+# produced with; the code uses no version-specific APIs and later minor releases
+# should work. Python 3.11 or newer.
+numpy==2.2.4
+scipy==1.15.3
+matplotlib==3.10.3
+
+# Only needed to re-run the Section 7 judge experiments on a GPU (not required to
+# verify any number in the paper, whose judge outputs are included in results/):
+#   vllm==0.28.0
+#   transformers>=4.44

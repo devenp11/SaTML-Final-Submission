@@ -1,0 +1,362 @@
+{
+ "seed=detector, flag=detector": {
+  "n_sig": 15.0,
+  "n_pairs": 17,
+  "pairs": [
+   {
+    "model": "GPT",
+    "A": "AllCombined",
+    "B": "LLMJudge",
+    "teams": 10,
+    "diff": -0.11107226716446623,
+    "ci": [
+     -0.43412753252761394,
+     0.23243265027301388
+    ],
+    "sig": false
+   },
+   {
+    "model": "GPT",
+    "A": "AllCombined",
+    "B": "Spotlight",
+    "teams": 9,
+    "diff": -0.5896917964609065,
+    "ci": [
+     -0.7554599756564258,
+     -0.41000862663906157
+    ],
+    "sig": true
+   },
+   {
+    "model": "GPT",
+    "A": "LLMJudge",
+    "B": "PromptShield-v1",
+    "teams": 13,
+    "diff": -0.5336107659260947,
+    "ci": [
+     -0.7148488354013006,
+     -0.32894597254132085
+    ],
+    "sig": true
+   },
+   {
+    "model": "GPT",
+    "A": "LLMJudge",
+    "B": "Spotlight",
+    "teams": 16,
+    "diff": -0.6404113626863367,
+    "ci": [
+     -0.8165935941804177,
+     -0.44941623161243033
+    ],
+    "sig": true
+   },
+   {
+    "model": "GPT",
+    "A": "LLMJudge",
+    "B": "TaskTracker-Phi3",
+    "teams": 15,
+    "diff": -0.402440287917213,
+    "ci": [
+     -0.6300396232169504,
+     -0.1648166570270243
+    ],
+    "sig": true
+   },
+   {
+    "model": "GPT",
+    "A": "PromptShield-v1",
+    "B": "Spotlight",
+    "teams": 17,
+    "diff": -0.06502270670910262,
+    "ci": [
+     -0.12058256223025847,
+     -0.01926384588923289
+    ],
+    "sig": true
+   },
+   {
+    "model": "GPT",
+    "A": "PromptShield-v1",
+    "B": "TaskTracker-Phi3",
+    "teams": 19,
+    "diff": 0.26297615692152926,
+    "ci": [
+     0.1172622772283863,
+     0.407145468691371
+    ],
+    "sig": true
+   },
+   {
+    "model": "GPT",
+    "A": "Spotlight",
+    "B": "TaskTracker-Phi3",
+    "teams": 17,
+    "diff": 0.24673549628343838,
+    "ci": [
+     0.11191223296433828,
+     0.40871675402834373
+    ],
+    "sig": true
+   },
+   {
+    "model": "Phi-3",
+    "A": "AllCombined",
+    "B": "LLMJudge",
+    "teams": 9,
+    "diff": -0.02402502850822683,
+    "ci": [
+     -0.19517037627430137,
+     0.10789231446896123
+    ],
+    "sig": false
+   },
+   {
+    "model": "Phi-3",
+    "A": "AllCombined",
+    "B": "Spotlight",
+    "teams": 11,
+    "diff": -0.5839982651621568,
+    "ci": [
+     -0.7833059146644255,
+     -0.37995243888421404
+    ],
+    "sig": true
+   },
+   {
+    "model": "Phi-3",
+    "A": "AllCombined",
+    "B": "TaskTracker-Phi3",
+    "teams": 9,
+    "diff": -0.4302162005765635,
+    "ci": [
+     -0.6657396497320451,
+     -0.1649187684197173
+    ],
+    "sig": true
+   },
+   {
+    "model": "Phi-3",
+    "A": "LLMJudge",
+    "B": "PromptShield-v1",
+    "teams": 13,
+    "diff": -0.4289784841123101,
+    "ci": [
+     -0.6555338642838643,
+     -0.2001683849816276
+    ],
+    "sig": true
+   },
+   {
+    "model": "Phi-3",
+    "A": "LLMJudge",
+    "B": "Spotlight",
+    "teams": 24,
+    "diff": -0.5260780662976142,
+    "ci": [
+     -0.6820757282284089,
+     -0.37896031392354923
+    ],
+    "sig": true
+   },
+   {
+    "model": "Phi-3",
+    "A": "LLMJudge",
+    "B": "TaskTracker-Phi3",
+    "teams": 22,
+    "diff": -0.23276751070226334,
+    "ci": [
+     -0.42013291426584676,
+     -0.0400664480547968
+    ],
+    "sig": true
+   },
+   {
+    "model": "Phi-3",
+    "A": "PromptShield-v1",
+    "B": "Spotlight",
+    "teams": 29,
+    "diff": -0.1713362068965517,
+    "ci": [
+     -0.29097521551724137,
+     -0.07068067528735636
+    ],
+    "sig": true
+   },
+   {
+    "model": "Phi-3",
+    "A": "PromptShield-v1",
+    "B": "TaskTracker-Phi3",
+    "teams": 19,
+    "diff": 0.33507884750497813,
+    "ci": [
+     0.1190749320530655,
+     0.5581498495521492
+    ],
+    "sig": true
+   },
+   {
+    "model": "Phi-3",
+    "A": "Spotlight",
+    "B": "TaskTracker-Phi3",
+    "teams": 38,
+    "diff": 0.3493094981236142,
+    "ci": [
+     0.22382753263068952,
+     0.48052637877198107
+    ],
+    "sig": true
+   }
+  ]
+ },
+ "seed=e2e, flag=e2e": {
+  "n_sig": 7.0,
+  "n_pairs": 12,
+  "pairs": [
+   {
+    "model": "GPT",
+    "A": "LLMJudge",
+    "B": "PromptShield-v1",
+    "teams": 11,
+    "diff": -0.32403873862853905,
+    "ci": [
+     -0.4928288781925145,
+     -0.16393752381723586
+    ],
+    "sig": true
+   },
+   {
+    "model": "GPT",
+    "A": "LLMJudge",
+    "B": "Spotlight",
+    "teams": 8,
+    "diff": -0.2793371900231656,
+    "ci": [
+     -0.5406150712995225,
+     -0.055984269795245414
+    ],
+    "sig": true
+   },
+   {
+    "model": "GPT",
+    "A": "LLMJudge",
+    "B": "TaskTracker-Phi3",
+    "teams": 11,
+    "diff": -0.016440855727368617,
+    "ci": [
+     -0.09667280781671646,
+     0.05999626889353164
+    ],
+    "sig": false
+   },
+   {
+    "model": "GPT",
+    "A": "PromptShield-v1",
+    "B": "Spotlight",
+    "teams": 10,
+    "diff": 0.05799827440653129,
+    "ci": [
+     -0.17730445329390285,
+     0.29598130871422135
+    ],
+    "sig": false
+   },
+   {
+    "model": "GPT",
+    "A": "PromptShield-v1",
+    "B": "TaskTracker-Phi3",
+    "teams": 16,
+    "diff": 0.22743778736085216,
+    "ci": [
+     0.08002033113422188,
+     0.40974487844118607
+    ],
+    "sig": true
+   },
+   {
+    "model": "GPT",
+    "A": "Spotlight",
+    "B": "TaskTracker-Phi3",
+    "teams": 9,
+    "diff": 0.2650441910723682,
+    "ci": [
+     0.060561513744328256,
+     0.5346158836067093
+    ],
+    "sig": true
+   },
+   {
+    "model": "Phi-3",
+    "A": "LLMJudge",
+    "B": "PromptShield-v1",
+    "teams": 21,
+    "diff": -0.06657119535568434,
+    "ci": [
+     -0.13075505150710615,
+     -0.019975283106991922
+    ],
+    "sig": true
+   },
+   {
+    "model": "Phi-3",
+    "A": "LLMJudge",
+    "B": "Spotlight",
+    "teams": 17,
+    "diff": -0.0036016656343480467,
+    "ci": [
+     -0.04969859360357303,
+     0.03886736153472179
+    ],
+    "sig": false
+   },
+   {
+    "model": "Phi-3",
+    "A": "LLMJudge",
+    "B": "TaskTracker-Phi3",
+    "teams": 18,
+    "diff": -0.053842233075353706,
+    "ci": [
+     -0.10114338665158153,
+     -0.016387134644578232
+    ],
+    "sig": true
+   },
+   {
+    "model": "Phi-3",
+    "A": "PromptShield-v1",
+    "B": "Spotlight",
+    "teams": 28,
+    "diff": 0.07322353036348277,
+    "ci": [
+     0.019338753615649205,
+     0.13286196552393403
+    ],
+    "sig": true
+   },
+   {
+    "model": "Phi-3",
+    "A": "PromptShield-v1",
+    "B": "TaskTracker-Phi3",
+    "teams": 46,
+    "diff": -0.01822272883942032,
+    "ci": [
+     -0.091000684949133,
+     0.04296976278404667
+    ],
+    "sig": false
+   },
+   {
+    "model": "Phi-3",
+    "A": "Spotlight",
+    "B": "TaskTracker-Phi3",
+    "teams": 24,
+    "diff": -0.052524421659025745,
+    "ci": [
+     -0.11646893903985789,
+     0.003837158648532568
+    ],
+    "sig": false
+   }
+  ]
+ }
+}

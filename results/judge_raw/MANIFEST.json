@@ -1,0 +1,142 @@
+{
+  "_what": "Raw per-payload judge outputs backing Section 7. One JSON object per line: payload_id, draw, temp, seed, score.",
+  "_scoring": "All six runs use --score-mode sample: the decision is the verdict token the judge actually emitted. This is the valid mode. Scoring from first-token log-probabilities is exactly temperature-invariant and cannot produce a sampled arm; see superseded_logprob/ and the pitfall note in Section 7.",
+  "_payload_set": "9,392 distinct payload strings built by scripts/14_build_judge_dataset.py from the public LLMail-Inject corpus, covering 242 real exploit families and 16,469 near-variants, plus benign emails for FPR calibration.",
+  "_prompt": "Single judge prompt shared by both models; see src/judge.py. Threshold 0.5 (the FPR-matched quantile is slack because scores are binary).",
+  "_run_date_recorded": "2026-09-06/07, as recorded in the run logs; the artifact does not depend on this field.",
+  "_reproduce": "python scripts/27_dose_response_trend.py   (no GPU required)",
+  "files": {
+    "judge_scores_T0.0_k2_s.jsonl": {
+      "records": 18784,
+      "unique_payloads": 9392,
+      "draws": 2,
+      "temperature": 0.0,
+      "seeds": [
+        1000,
+        1001
+      ],
+      "score_values": [
+        0.0,
+        1.0
+      ],
+      "positive_rate": 0.906623,
+      "sha256": "f932a8dbd6ce2c1b647ca42a8b6e6a545fbb87ce914dc951d6f0ffbc68a92bac",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "scoring": "sampled verdict (the judge's actually emitted YES/NO token)",
+      "score_semantics": "1.0 = judge flagged the payload as an injection; 0.0 = passed",
+      "produced_by": "scripts/15_run_judge.py --backend vllm --score-mode sample --temp 0.0 --draws 2"
+    },
+    "judge_scores_T0.3_k5_s.jsonl": {
+      "records": 46960,
+      "unique_payloads": 9392,
+      "draws": 5,
+      "temperature": 0.3,
+      "seeds": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004
+      ],
+      "score_values": [
+        0.0,
+        1.0
+      ],
+      "positive_rate": 0.905664,
+      "sha256": "3119f34ef1f5cb2b1c569eb281cc72f05ca8bf5eef13ea13cb46fab8648d95bf",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "scoring": "sampled verdict (the judge's actually emitted YES/NO token)",
+      "score_semantics": "1.0 = judge flagged the payload as an injection; 0.0 = passed",
+      "produced_by": "scripts/15_run_judge.py --backend vllm --score-mode sample --temp 0.3 --draws 5"
+    },
+    "judge_scores_T0.7_k5_s.jsonl": {
+      "records": 46960,
+      "unique_payloads": 9392,
+      "draws": 5,
+      "temperature": 0.7,
+      "seeds": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004
+      ],
+      "score_values": [
+        0.0,
+        1.0
+      ],
+      "positive_rate": 0.886222,
+      "sha256": "1e9e30497294e609d879e61859e82304b6998a2bd68f8ec5787d19e6a60f3c37",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "scoring": "sampled verdict (the judge's actually emitted YES/NO token)",
+      "score_semantics": "1.0 = judge flagged the payload as an injection; 0.0 = passed",
+      "produced_by": "scripts/15_run_judge.py --backend vllm --score-mode sample --temp 0.7 --draws 5"
+    },
+    "judge_scores_T1.0_k5_s.jsonl": {
+      "records": 46960,
+      "unique_payloads": 9392,
+      "draws": 5,
+      "temperature": 1.0,
+      "seeds": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004
+      ],
+      "score_values": [
+        0.0,
+        1.0
+      ],
+      "positive_rate": 0.863267,
+      "sha256": "7cfc531e3e6de6920a2a73c34af3be8227a94885c4753185568fb3fbd09556c5",
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "scoring": "sampled verdict (the judge's actually emitted YES/NO token)",
+      "score_semantics": "1.0 = judge flagged the payload as an injection; 0.0 = passed",
+      "produced_by": "scripts/15_run_judge.py --backend vllm --score-mode sample --temp 1.0 --draws 5"
+    },
+    "judge_scores_T0.0_k2_s_q7b.jsonl": {
+      "records": 18784,
+      "unique_payloads": 9392,
+      "draws": 2,
+      "temperature": 0.0,
+      "seeds": [
+        1000,
+        1001
+      ],
+      "score_values": [
+        0.0,
+        1.0
+      ],
+      "positive_rate": 0.878247,
+      "sha256": "dff2f9b75fa4c8abe4ecb6263bed96fb09c3e6f3db354afae9fa4cda0df1238e",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "scoring": "sampled verdict (the judge's actually emitted YES/NO token)",
+      "score_semantics": "1.0 = judge flagged the payload as an injection; 0.0 = passed",
+      "produced_by": "scripts/15_run_judge.py --backend vllm --score-mode sample --temp 0.0 --draws 2 --tag q7b"
+    },
+    "judge_scores_T1.0_k5_s_q7b.jsonl": {
+      "records": 46960,
+      "unique_payloads": 9392,
+      "draws": 5,
+      "temperature": 1.0,
+      "seeds": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004
+      ],
+      "score_values": [
+        0.0,
+        1.0
+      ],
+      "positive_rate": 0.874595,
+      "sha256": "7b81a6b7930900236ce91d60537a393550db796543c490fa50a5143d4032c4e4",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "scoring": "sampled verdict (the judge's actually emitted YES/NO token)",
+      "score_semantics": "1.0 = judge flagged the payload as an injection; 0.0 = passed",
+      "produced_by": "scripts/15_run_judge.py --backend vllm --score-mode sample --temp 1.0 --draws 5 --tag q7b"
+    }
+  }
+}
